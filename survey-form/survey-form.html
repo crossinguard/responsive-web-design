@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <!-- TITLE -->
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform.
+    </p>
+
+    <!-- FORM -->
+    <form id="survey-form">
+      <!-- TEXT -->
+      <fieldset id="text-input">
+        <label id="name-label" for="name"
+          >Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label id="number-label" for="number"
+          >Age
+          <span class="instructions">(optional)</span>
+          <input
+            id="number"
+            type="number"
+            placeholder="Age"
+            min="18"
+            max="120"
+          />
+        </label>
+      </fieldset>
+
+      <!-- DROPDOWN -->
+      <fieldset id="dropdown-input">
+        <label for="dropdown"
+          >Which dropdown option would you like to select?
+          <select id="dropdown">
+            <option disabled selected value="">Select a dropdown option</option>
+            <option value="dropdown-1">Dropdown 1</option>
+            <option value="dropdown-2">Dropdown 2</option>
+            <option value="dropdown-3">Dropdown 3</option>
+            <option value="dropdown-4">Dropdown 4</option>
+            <option value="dropdown-5">Dropdown 5</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- RADIO -->
+      <fieldset id="radio-input">
+        <p class="question">Would you use a radio-input question?</p>
+        <label for="yes">
+          <input
+            id="yes"
+            type="radio"
+            class="inline"
+            name="radio-group"
+            value="yes"
+          />
+          Yes
+        </label>
+        <label for="maybe">
+          <input
+            id="maybe"
+            type="radio"
+            class="inline"
+            name="radio-group"
+            value="maybe"
+          />
+          Maybe
+        </label>
+        <label for="no">
+          <input
+            id="no"
+            type="radio"
+            class="inline"
+            name="radio-group"
+            value="no"
+          />
+          No
+        </label>
+      </fieldset>
+
+      <!-- CHECKBOX -->
+      <fieldset id="checkbox-input">
+        <p class="question">
+          Which checkbox options would you like to select?
+          <span class="instructions">(check all that apply)</span>
+        </p>
+        <label for="checkbox-1">
+          <input
+            id="checkbox-1"
+            type="checkbox"
+            class="inline"
+            value="checkbox-1"
+          />
+          Checkbox 1
+        </label>
+        <label for="checkbox-2">
+          <input
+            id="checkbox-2"
+            type="checkbox"
+            class="inline"
+            value="checkbox-2"
+          />
+          Checkbox 2
+        </label>
+        <label for="checkbox-3">
+          <input
+            id="checkbox-3"
+            type="checkbox"
+            class="inline"
+            value="checkbox-3"
+          />
+          Checkbox 3
+        </label>
+        <label for="checkbox-4">
+          <input
+            id="checkbox-4"
+            type="checkbox"
+            class="inline"
+            value="checkbox-4"
+          />
+          Checkbox 4
+        </label>
+        <label for="checkbox-5">
+          <input
+            id="checkbox-5"
+            type="checkbox"
+            class="inline"
+            value="checkbox-5"
+          />
+          Checkbox 5
+        </label>
+      </fieldset>
+
+      <!-- TEXTAREA -->
+      <fieldset id="textarea-input">
+        <label for="comments">Please provide additional feedback:</label>
+        <textarea
+          id="comments"
+          rows="5"
+          placeholder="I would like to..."
+        ></textarea>
+      </fieldset>
+
+      <!-- SUBMIT -->
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
