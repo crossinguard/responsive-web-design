@@ -5,3 +5,4 @@ A collection of projects completed as part of the [Responsive Web Design](https:
 ## Projects
 
 - Survey Form
+- Tribute Page
