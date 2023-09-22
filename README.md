@@ -4,5 +4,5 @@ A collection of projects completed as part of the [Responsive Web Design](https:
 
 ## Projects
 
-- Survey Form
-- Tribute Page
+- [Survey Form](survey-form\survey-form.html)
+- [Tribute Page](tribute-page\tribute-page.html)
