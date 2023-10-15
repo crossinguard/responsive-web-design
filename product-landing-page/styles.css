@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #effafb, #f4f5f6);
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-block: 3rem;
+  text-align: center;
+}
+
+#header {
+  background: #effafb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  margin-block-end: 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+#header-img {
+  width: auto;
+  height: 80%;
+  margin: 10px;
+}
+
+#nav-bar {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #222;
+  border-bottom: 2px solid transparent;
+}
+
+#nav-bar a:hover {
+  border-bottom: 2px solid hsl(185, 61%, 32%);
+  border-radius: 0.25rem;
+}
+
+.container-main {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.container {
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.player-description {
+  margin-inline: 2rem;
+}
+
+.player-description p {
+  padding-block-end: 2rem;
+}
+
+iframe {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(32, 123, 131, 0.5);
+  margin-block-start: 6rem;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-inline: auto;
+  gap: 1rem;
+  margin-block-end: 2rem;
+}
+
+#form-entry {
+  margin-block-end: 20vh;
+}
+
+#form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  background: hsl(185, 61%, 32%);
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+#form p {
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #f5f6f7;
+  border: 1px solid #f5f6f7;
+  color: #1b1b32;
+}
+
+#submit {
+  width: 40%;
+}
+
+@media (max-width: 1000px) {
+  #header-img {
+    height: 50%;
+  }
+
+  #nav-bar {
+    font-size: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #crossinguard .container {
+    flex-direction: column-reverse;
+  }
+
+  img {
+    margin-block-end: 2rem;
+  }
+}
