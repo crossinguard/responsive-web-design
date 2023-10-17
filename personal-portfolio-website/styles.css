@@ -1,0 +1,231 @@
+:root {
+  --clr-teal: hsl(189, 82%, 29%);
+  --clr-white: hsl(0, 0%, 94%);
+  --clr-pink: hsl(333, 29%, 38%);
+  --clr-grey: hsl(0, 0%, 27%);
+  --clr-grey-black: hsl(0, 0%, 20%);
+  --clr-black: hsl(0, 0%, 13%);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Barlow', sans-serif;
+  color: var(--clr-white);
+}
+
+section {
+  min-height: calc(100vh - 3.5rem);
+  padding-block-start: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+/* NAVBAR */
+#navbar {
+  background-color: var(--clr-teal);
+  font-size: 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  border-bottom: 3px solid var(--clr-black);
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: end;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.navbar__link {
+  transition: background-color 0.3s ease-in-out;
+  padding: 0.5rem 1rem 0.8rem 1rem;
+}
+
+.navbar__link:hover {
+  background-color: var(--clr-pink);
+}
+
+/* WELCOME-SECTION */
+#welcome-section {
+  background: linear-gradient(
+    60deg,
+    var(--clr-grey-black),
+    var(--clr-black),
+    var(--clr-black)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome-section > h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 var(--clr-black);
+  margin-block: 0 1rem;
+}
+
+#welcome-section > p {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 100;
+  color: var(--clr-teal);
+  text-shadow: 1px 1px 0 var(--clr-black);
+  margin: 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 3rem;
+  background-color: var(--clr-black);
+  text-align: center;
+}
+
+#projects > h2 {
+  font-size: 4rem;
+  text-decoration: underline var(--clr-pink);
+  margin: 0;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+@media (max-width: 700px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.portfolio > .project-tile {
+  background-color: var(--clr-grey);
+  opacity: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.portfolio > .project-tile > img {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  opacity: 0.5;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#profile-link {
+  padding-block-start: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: initial;
+}
+
+.button {
+  background: var(--clr-pink);
+  padding: 0.5em 5em;
+  border-radius: 1rem;
+  max-width: 25%;
+  margin-inline: auto;
+  font-size: 1.25rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--clr-grey-black);
+  min-height: calc(90vh - 3.5rem);
+}
+
+#contact > h2 {
+  font-size: 3.5rem;
+  margin-block: 0;
+}
+
+#contact > p {
+  font-size: 1.5rem;
+  margin-block: 0 2rem;
+  font-style: italic;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  font-size: 1.125rem;
+}
+
+.social > a > svg {
+  padding-inline-end: 0.5rem;
+}
+
+.brand:hover {
+  border-bottom: 2px solid var(--clr-teal);
+}
+
+.social > a > svg:hover {
+  color: var(--clr-teal);
+}
+
+footer {
+  background-color: var(--clr-grey);
+  border-top: 5px solid var(--clr-teal);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding-block: 2rem;
+  width: 80%;
+  margin-inline: auto;
+  font-size: 1.25rem;
+}
+
+.footer-container > p {
+  margin: 0;
+}
+
+.footer-container > p > a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.footer-container > p > a:hover {
+  opacity: 0.9;
+}
